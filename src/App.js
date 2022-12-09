@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {useEffect,useState,useRef} from 'react'
 function App() {
@@ -50,7 +49,7 @@ function App() {
               return(
                 <div key={item.recipe.label} className='Ingredient'>
                   <span>{item.recipe.label}</span>
-                  <img src={item.recipe.image}/>
+                  <img src={item.recipe.image} alt="recipe"/>
                   <div className='Steps'>
                   {item.recipe.ingredientLines.map((step,index)=>
                     {
